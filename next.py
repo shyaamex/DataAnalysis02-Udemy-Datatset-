@@ -1,8 +1,11 @@
 from sales_analysis import main
+import time as t
 
 class next(main): 
     
     def menu(self):
+            t.sleep(5)
+            
             print("""
                         Enter your choice
                         ==================
