@@ -68,16 +68,13 @@ class main():
 #       6 Number of paid and free accounts 
     def paid_free_chart(self):
         print(self.data['is_paid'].value_counts())
-        sea.countplot( data=self.data['is_paid'].value_counts())
-        plt.xlabel("Level",fontsize=13)
-        plt.ylabel("Number of Free And Paid Courses",fontsize=13)
-        plt.xticks(rotation=65)
-        plt.show()
+        
         
         
         
 #       7 Most popular course by number of subscriber
-    def most_populor_10(self):
+    def popular_course(self):
+        print("\nSubs        Course name\n")
         print(self.data[self.data['num_subscribers'].max()==self.data['num_subscribers']]['course_title'])
   
   
@@ -86,6 +83,7 @@ class main():
     def most_populor_10(self):
         self.a=self.data.sort_values(by="num_subscribers",ascending=False).head(10)
         sea.barplot(x="num_subscribers",y="course_title",data=self.a)
+        plt.show()
         
         
         
@@ -93,6 +91,7 @@ class main():
     def highest_review(self):
         plt.figure(figsize=(10,4))
         sea.barplot(x="subject",y="num_reviews",data=self.data)
+        plt.show()
         
         
         
@@ -100,3 +99,4 @@ class main():
     def pop_py_course(self):
         self.python=self.data[self.data['course_title'].str.contains('python',case=False)].sort_values(by="num_subscribers",ascending=False).head(10)
         sea.barplot(x="num_subscribers",y="course_title",data=self.python)
+        plt.show()
