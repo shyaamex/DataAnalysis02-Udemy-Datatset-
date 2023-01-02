@@ -1,6 +1,15 @@
 from sales_analysis import main
 import time as t
 
+
+
+
+# The next class shows the menu from which options of user's choice
+# are selected and operations related to those operations called from
+# the previous files and executed
+
+
+
 class next(main): 
     
     def menu(self):
