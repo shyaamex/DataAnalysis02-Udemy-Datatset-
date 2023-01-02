@@ -18,3 +18,7 @@ and methods to make this code more efficient and readable.
 * Numpy
 * Matplotlib
 * Seaborn
+
+# You can access this dataset on kaggle
+
+https://www.kaggle.com/datasets/andrewmvd/udemy-courses
