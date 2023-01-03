@@ -18,6 +18,7 @@ and methods to make this code more efficient and readable.
 * Numpy
 * Matplotlib
 * Seaborn
+* VS Code/Pycharm
 
 # You can access this dataset on kaggle
 
